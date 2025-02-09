@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base {
+    button {
+    @apply cursor: pointer;
+    }
+}
+
+@layer components {
+  .label {
+    @apply flex flex-col font-semibold;
+  }
+
+  .input {
+    @apply border border-gray-500 font-normal;
+  }
+
+  .btn {
+    @apply border px-5 py-1 rounded bg-gray-300 transition-colors ease-in-out duration-300;
+  }
+}
+
+@layer utilities {
+	.background-fixed {
+		background-attachment: fixed;
+	}
+}
